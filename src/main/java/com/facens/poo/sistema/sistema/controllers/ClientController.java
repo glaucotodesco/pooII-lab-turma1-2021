@@ -1,7 +1,6 @@
 package com.facens.poo.sistema.sistema.controllers;
 
 import java.net.URI;
-import java.util.List;
 import com.facens.poo.sistema.sistema.dto.ClientDTO;
 import com.facens.poo.sistema.sistema.dto.ClientInsertDTO;
 import com.facens.poo.sistema.sistema.dto.ClientUpdateDTO;

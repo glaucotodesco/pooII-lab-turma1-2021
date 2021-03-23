@@ -1,11 +1,7 @@
 package com.facens.poo.sistema.sistema.services;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
-
 import javax.persistence.EntityNotFoundException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
@@ -13,7 +9,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-
 import com.facens.poo.sistema.sistema.dto.ClientDTO;
 import com.facens.poo.sistema.sistema.dto.ClientInsertDTO;
 import com.facens.poo.sistema.sistema.dto.ClientUpdateDTO;
@@ -64,13 +59,6 @@ public class ClientService {
         }
     }
 
-    private List<ClientDTO> toDTOList(List<Client> list) {
-        List<ClientDTO> listDTO = new ArrayList<>();
-
-        for (Client c : list) {
-            listDTO.add(new ClientDTO(c.getId(), c.getName()));
-        }
-        return listDTO;
-    }
+    
 
 }
