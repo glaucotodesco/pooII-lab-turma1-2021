@@ -6,6 +6,8 @@ public class ClientInsertDTO {
     
     private String name;
     private String address;
+    private Double balance;
+
 
     public String getName() {
         return name;
@@ -21,6 +23,14 @@ public class ClientInsertDTO {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public Double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(Double balance) {
+        this.balance = balance;
     }
 
     

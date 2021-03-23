@@ -5,11 +5,11 @@ import com.facens.poo.sistema.sistema.entities.Client;
 public class ClientDTO {
     private Long id;
     private String name;
-
+    
     public ClientDTO() {
 	}
 
-    public ClientDTO(Long id, String name) {
+    public ClientDTO(Long id, String name, Double balance) {
         setId(id);
         setName(name);
 	}
